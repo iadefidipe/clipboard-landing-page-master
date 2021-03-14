@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css-reset.css">
+  <link rel="stylesheet" href="./scss/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
   
@@ -19,19 +20,22 @@
 </head>
 <body>
 
-  <div class="container">
-    <main>
+    <header>
       <div class="hero">
-        <img src="./images/logo.svg" alt="">
+        <img src="./images/logo.svg" alt="clipboard-logo">
         <h1>A history of everything you copy</h1>
         <p>
           Clipboard allows you to track and organize everything you
           copy. Instantly access your clipboard on all your devices.
         </p>
-        <button type="button"><a href="">Download for iOS</a></button>
-        <button type="button"><a href="">Download for Mac</a></button>
+        <div class="hero__button ">
+          <a href="">Download for iOS</a><a href="">Download for Mac</a>
+        </div>
       </div>
-      <div class="hero1">
+      
+    </header>
+
+    <div class="hero1">
         <h2>Keep track of your snippets</h2>
         <p>
           Clipboard instantly stores any item you copy in the cloud,
@@ -39,7 +43,6 @@
           devices. Our Mac and iOS apps will help you organize everything.
         </p>
       </div>
-    </main>
 
     <section class="features">
       <img src="./images/image-computer.png" alt="">
@@ -101,7 +104,7 @@
       Install Guide
     </footer>
     
-  </div>
+
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
