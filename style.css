@@ -194,6 +194,10 @@ footer .link {
       grid-template-rows: repeat(2, minmax(10px, 30px));
 }
 
+footer .link > a {
+  color: #4c545d;
+}
+
 footer .socials img {
   width: 1.5625rem;
   height: 1.5625rem;

@@ -16,6 +16,10 @@ footer{
         grid-template-columns: repeat(3, minmax(20ch, auto)) ;
         grid-template-rows: repeat(2, minmax(10px,30px));
 
+        > a{
+            color: $color-neutral-dark-blue;
+        }
+
 
     }
 
