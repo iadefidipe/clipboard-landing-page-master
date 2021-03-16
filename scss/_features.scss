@@ -1,0 +1,19 @@
+article{
+    .features{
+
+        &__copy{
+            h2{
+                margin-top: 6rem;
+                font-size: 1.5rem;
+                font-weight: $font-bold;
+                color: $color-neutral-dark-blue;
+            }
+            p{
+                margin: 0.625rem auto 0 auto; 
+                width: 60ch;
+            }
+        }
+
+        
+    }
+}

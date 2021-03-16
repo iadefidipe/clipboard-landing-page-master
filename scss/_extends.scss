@@ -1,23 +1,27 @@
 %button{
-    margin: 30px auto;
+    margin: 3.125rem auto 10rem auto;
     
     font-weight: $font-bold;
     
     
 
     a:first-child{
+        display: inline-block;
+        width: 12rem;
         padding: 1rem;
         border-radius: 6rem;
         cursor: pointer;
         background: $color-primary-blue;
-        box-shadow: 1px 4px hsl(233, 92%, 62%), 0 4px  10px $color-primary-blue;
+        box-shadow: 1px 2px hsl(233, 89%, 65%), 0 4px  10px $color-primary-blue;
     }
     a:last-child{
+        display: inline-block;
+        width: 12rem;
         margin-left: 20px;
         padding: 1rem ;
         border-radius: 6rem;
         cursor: pointer;
         background: $color-primary-cyan;
-        box-shadow: 1px 4px hsl(171, 69%, 40%), 0 4px 10px hsl(210, 10%, 33%);
+        box-shadow: 1px 2px hsl(171, 69%, 40%), 0 4px 10px hsl(210, 10%, 33%);
     }
 }

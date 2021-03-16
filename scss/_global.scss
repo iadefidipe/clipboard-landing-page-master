@@ -16,9 +16,15 @@ body{
 }
 
 a, a::after, a::before{
-  all: unset;
+  // all: unset;
   text-decoration: none;
   color: $white;
   
+}
+
+p{
+  color: $color-neutral-gray-blue;
+  font-size: $font-sz-gen;
+  line-height: 1.7rem;
 }
 
