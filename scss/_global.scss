@@ -22,9 +22,24 @@ a, a::after, a::before{
   
 }
 
+// .container{
+//   margin: 0 10.3125rem;
+// }
 p{
   color: $color-neutral-gray-blue;
   font-size: $font-sz-gen;
   line-height: 1.7rem;
+}
+
+h3{
+  font-size: $font-sz-h3;
+  font-weight: $font-bold;
+  color:$color-neutral-dark-blue;
+}
+
+h2{
+  font-size: $font-sz-h2;
+  font-weight: $font-bold;
+  color: $color-neutral-dark-blue;
 }
 

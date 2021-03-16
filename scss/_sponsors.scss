@@ -1,3 +1,37 @@
-.sponsor{
-    
+.extra{
+    margin: 5rem auto 5rem auto;
+    display: flex;
+    justify-content: space-around;
+
+    .copy{
+        img{
+            margin-bottom: 3.125rem;
+        }
+        p{
+            margin-top: 1.875rem;
+            width: 30ch;
+        }
+    }
+
+}
+
+.sponsors{
+    margin: 0 auto 10.3125rem auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.cta{
+    margin-bottom: 8.125rem;
+    &__copy{
+        p{
+            margin: 1.875rem auto 0 auto; 
+            width: 60ch;
+        }
+    }
+
+    &__button{
+        @extend %button;
+    }
 }

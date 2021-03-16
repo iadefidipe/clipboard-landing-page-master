@@ -1,0 +1,34 @@
+footer{
+    background-color: $footer-bg;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+
+
+    img{
+        width:3.4375rem;
+        height: 3.4375rem;
+    }
+
+    .link{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(20ch, auto)) ;
+        grid-template-rows: repeat(2, minmax(10px,30px));
+
+
+    }
+
+    .socials{
+        img{
+            width:1.5625rem;
+            height: 1.5625rem;
+            &:not(:first-child){
+                margin-left: 1.5625rem;
+            }
+        }
+    }
+
+
+
+}

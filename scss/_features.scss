@@ -4,11 +4,7 @@ article{
     .features{
 
         &__copy{
-            h2{
-                font-size: $font-sz-h2;
-                font-weight: $font-bold;
-                color: $color-neutral-dark-blue;
-            }
+            
             p{
                 margin: 1.875rem auto 0 auto; 
                 width: 60ch;
@@ -23,7 +19,7 @@ article{
             align-items: center;
 
             img{
-                transform: translateX(-50px);
+                transform: translateX(-100px);
             }
 
             aside{
@@ -32,11 +28,7 @@ article{
 
                 .feature{
                     
-                    h3{
-                        font-size: $font-sz-h3;
-                        font-weight: $font-bold;
-                        color:$color-neutral-dark-blue;
-                    }
+                    
 
                     p{
                         margin-top: 1.125rem;

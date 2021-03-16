@@ -1,9 +1,9 @@
-header .hero__button {
+header .hero__button, .cta__button {
   margin: 3.125rem auto 10rem auto;
   font-weight: 600;
 }
 
-header .hero__button a:first-child {
+header .hero__button a:first-child, .cta__button a:first-child {
   display: inline-block;
   width: 12rem;
   padding: 1rem;
@@ -14,7 +14,7 @@ header .hero__button a:first-child {
           box-shadow: 1px 2px #5669f5, 0 4px 10px #6173ff;
 }
 
-header .hero__button a:last-child {
+header .hero__button a:last-child, .cta__button a:last-child {
   display: inline-block;
   width: 12rem;
   margin-left: 20px;
@@ -56,6 +56,18 @@ p {
   line-height: 1.7rem;
 }
 
+h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #4c545d;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #4c545d;
+}
+
 header {
   margin-top: 100px;
 }
@@ -73,14 +85,44 @@ header .hero p {
   font-size: 1rem;
 }
 
-article {
-  margin-top: 6rem;
+.extra {
+  margin: 5rem auto 5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-article .features__copy h2 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: #4c545d;
+.extra .copy img {
+  margin-bottom: 3.125rem;
+}
+
+.extra .copy p {
+  margin-top: 1.875rem;
+  width: 30ch;
+}
+
+.sponsors {
+  margin: 0 auto 10.3125rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cta {
+  margin-bottom: 8.125rem;
+}
+
+.cta__copy p {
+  margin: 1.875rem auto 0 auto;
+  width: 60ch;
+}
+
+article {
+  margin-top: 6rem;
 }
 
 article .features__copy p {
@@ -99,19 +141,13 @@ article .features > section {
 }
 
 article .features > section img {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
 }
 
 article .features > section aside {
   text-align: left;
   margin: -20px 0 0 6.875rem;
-}
-
-article .features > section aside .feature h3 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #4c545d;
 }
 
 article .features > section aside .feature p {
@@ -129,5 +165,41 @@ article .features:nth-child(2) {
 
 article .features:nth-child(2) > img {
   margin-top: 100px;
+}
+
+footer {
+  background-color: #f6f7f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+footer img {
+  width: 3.4375rem;
+  height: 3.4375rem;
+}
+
+footer .link {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20ch, auto))[3];
+      grid-template-columns: repeat(3, minmax(20ch, auto));
+  -ms-grid-rows: (minmax(10px, 30px))[2];
+      grid-template-rows: repeat(2, minmax(10px, 30px));
+}
+
+footer .socials img {
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+
+footer .socials img:not(:first-child) {
+  margin-left: 1.5625rem;
 }
 /*# sourceMappingURL=style.css.map */
