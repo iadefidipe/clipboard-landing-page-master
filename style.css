@@ -3,7 +3,7 @@ header .hero__button, .cta__button {
   font-weight: 600;
 }
 
-@media screen and (max-width: 556px) {
+@media screen and (max-width: 34.75rem) {
   header .hero__button, .cta__button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -34,7 +34,7 @@ header .hero__button a:first-child, .cta__button a:first-child {
           box-shadow: 1px 2px #5669f5, 0 4px 10px #6173ff;
 }
 
-@media screen and (max-width: 556px) {
+@media screen and (max-width: 34.75rem) {
   header .hero__button a:first-child, .cta__button a:first-child {
     width: 90%;
   }
@@ -52,7 +52,7 @@ header .hero__button a:last-child, .cta__button a:last-child {
           box-shadow: 1px 2px #20ac97, 0 4px 10px #4c545d;
 }
 
-@media screen and (max-width: 556px) {
+@media screen and (max-width: 34.75rem) {
   header .hero__button a:last-child, .cta__button a:last-child {
     width: 90%;
     margin-top: 20px;
@@ -79,11 +79,11 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
 }
 
-@media screen and (max-width: 556px) {
+@media screen and (max-width: 34.75rem) {
   body {
     background-image: url(/images/bg-header-mobile.png);
     background-size: contain;
-    margin: 0 15px;
+    margin: 0 0.9375rem;
   }
 }
 
@@ -111,7 +111,7 @@ h2 {
 }
 
 header {
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 
 header .hero h1 {
@@ -127,7 +127,7 @@ header .hero p {
   font-size: 1rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   header .hero p {
     width: 80%;
   }
@@ -142,7 +142,7 @@ header .hero p {
       justify-content: space-around;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .extra {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -172,7 +172,7 @@ header .hero p {
       justify-content: space-around;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .sponsors {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -199,7 +199,7 @@ header .hero p {
   width: 60ch;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .cta__copy p {
     width: 80%;
   }
@@ -214,7 +214,7 @@ article .features__copy p {
   width: 60ch;
 }
 
-@media screen and (max-width: 556px) {
+@media screen and (max-width: 34.75rem) {
   article .features__copy p {
     width: 80%;
   }
@@ -230,7 +230,7 @@ article .features > section {
           align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   article .features > section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -243,33 +243,33 @@ article .features > section {
 }
 
 article .features > section img {
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
+  -webkit-transform: translateX(-6.25rem);
+          transform: translateX(-6.25rem);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   article .features > section img {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    width: 500px;
-    height: 500px;
+    width: 31.25rem;
+    height: 31.25rem;
   }
 }
 
-@media screen and (max-width: 556px) {
+@media screen and (max-width: 34.75rem) {
   article .features > section img {
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
   }
 }
 
 article .features aside {
-  margin: -20px 0 0 6.875rem;
+  margin: -1.25rem 0 0 6.875rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   article .features aside {
-    margin: 20px 0 0 0;
+    margin: 1.25rem 0 0 0;
     text-align: center;
   }
 }
@@ -279,7 +279,7 @@ article .features aside .feature p {
   width: 35ch;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   article .features aside .feature p {
     width: 90%;
   }
@@ -297,7 +297,7 @@ article .features:nth-child(2) > img {
   margin-top: 6.25rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   article .features:nth-child(2) > img {
     width: 25rem;
     height: 18.75rem;
@@ -317,7 +317,7 @@ footer {
   padding: 2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -331,7 +331,7 @@ footer img {
   height: 3.4375rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   footer img {
     margin-bottom: 2.1875rem;
   }
@@ -342,17 +342,17 @@ footer .link {
   display: grid;
   -ms-grid-columns: (minmax(20ch, auto))[3];
       grid-template-columns: repeat(3, minmax(20ch, auto));
-  -ms-grid-rows: (minmax(10px, 30px))[2];
-      grid-template-rows: repeat(2, minmax(10px, 30px));
+  -ms-grid-rows: (minmax(0.625rem, 1.875rem))[2];
+      grid-template-rows: repeat(2, minmax(0.625rem, 1.875rem));
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   footer .link {
     margin-top: 2.1875rem 0;
     -ms-grid-columns: minmax(20ch, auto);
         grid-template-columns: minmax(20ch, auto);
-    -ms-grid-rows: (minmax(10px, 30px))[5];
-        grid-template-rows: repeat(5, minmax(10px, 30px));
+    -ms-grid-rows: (minmax(0.625rem, 1.875rem))[5];
+        grid-template-rows: repeat(5, minmax(0.625rem, 1.875rem));
     grid-gap: 2.1875rem;
   }
 }
@@ -361,7 +361,7 @@ footer .link > a {
   color: #4c545d;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   footer .socials {
     margin-top: 2.1875rem;
   }

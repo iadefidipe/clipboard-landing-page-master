@@ -23,20 +23,18 @@ article{
             @include media-query(tablet){
                 flex-direction: column;
                 justify-content: center;
-
-               
             }
 
             img{
-                transform: translateX(-100px);
+                transform: translateX(-6.25rem);
                 @include media-query(tablet){
                     transform: translateX(0);
-                    width: 500px;
-                    height: 500px;
+                    width: 31.25rem;
+                    height: 31.25rem;
                 }
                 @include media-query(mobile){
-                    width: 300px;
-                    height: 300px;
+                    width: 18.75rem;
+                    height: 18.75rem;
                 }
             }
 
@@ -45,9 +43,9 @@ article{
 
             aside{
                 // text-align: left;
-                margin: -20px 0 0 6.875rem;
+                margin: -1.25rem 0 0 6.875rem;
                 @include media-query(tablet){
-                    margin: 20px 0 0 0;
+                    margin: 1.25rem 0 0 0;
                     text-align: center;
                 }
 
@@ -75,7 +73,7 @@ article{
             &:nth-child(2){
             margin-top:10rem;
                 // @include media-query(tablet){
-                //     margin-top: 20px;
+                //     margin-top: 1.25rem;
 
                 //     text-align: center;
                 // }

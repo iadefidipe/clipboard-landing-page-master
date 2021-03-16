@@ -21,11 +21,11 @@ footer{
         
         display: grid;
         grid-template-columns: repeat(3, minmax(20ch, auto)) ;
-        grid-template-rows: repeat(2, minmax(10px,30px));
+        grid-template-rows: repeat(2, minmax(0.625rem,1.875rem));
         @include media-query(tablet){
             margin-top: 2.1875rem 0;
             grid-template-columns: minmax(20ch, auto) ;
-            grid-template-rows: repeat(5, minmax(10px,30px));
+            grid-template-rows: repeat(5, minmax(0.625rem,1.875rem));
             grid-gap: 2.1875rem;
         }
 
