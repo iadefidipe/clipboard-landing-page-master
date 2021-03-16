@@ -4,17 +4,30 @@ footer{
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
+    @include media-query (tablet){
+        flex-direction: column;
+    }
 
 
     img{
         width:3.4375rem;
         height: 3.4375rem;
+        @include media-query(tablet){
+            margin-bottom: 2.1875rem ;
+        }
     }
 
     .link{
+        
         display: grid;
         grid-template-columns: repeat(3, minmax(20ch, auto)) ;
         grid-template-rows: repeat(2, minmax(10px,30px));
+        @include media-query(tablet){
+            margin-top: 2.1875rem 0;
+            grid-template-columns: minmax(20ch, auto) ;
+            grid-template-rows: repeat(5, minmax(10px,30px));
+            grid-gap: 2.1875rem;
+        }
 
         > a{
             color: $color-neutral-dark-blue;
@@ -24,6 +37,9 @@ footer{
     }
 
     .socials{
+        @include media-query(tablet){
+            margin-top: 2.1875rem ;
+        }
         img{
             width:1.5625rem;
             height: 1.5625rem;

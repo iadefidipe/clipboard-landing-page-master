@@ -2,6 +2,11 @@
     margin: 5rem auto 5rem auto;
     display: flex;
     justify-content: space-around;
+    @include media-query(tablet){
+        flex-direction: column;
+        
+        align-items: center;
+    }
 
     .copy{
         img{
@@ -19,6 +24,17 @@
     margin: 0 auto 10.3125rem auto;
     display: flex;
     justify-content: space-around;
+    @include media-query(tablet){
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img:not(:first-child){
+            margin-top: 3.125rem;
+        }
+        
+    }
+
 
 }
 
@@ -28,6 +44,9 @@
         p{
             margin: 1.875rem auto 0 auto; 
             width: 60ch;
+            @include media-query (tablet){
+                width: 80%;
+            }
         }
     }
 

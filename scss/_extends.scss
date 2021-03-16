@@ -2,6 +2,14 @@
     margin: 3.125rem auto 10rem auto;
     
     font-weight: $font-bold;
+
+    @include media-query(mobile){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
     
     
 
@@ -13,6 +21,9 @@
         cursor: pointer;
         background: $color-primary-blue;
         box-shadow: 1px 2px hsl(233, 89%, 65%), 0 4px  10px $color-primary-blue;
+        @include media-query (mobile){
+            width: 90%;
+        }
     }
     a:last-child{
         display: inline-block;
@@ -23,5 +34,10 @@
         cursor: pointer;
         background: $color-primary-cyan;
         box-shadow: 1px 2px hsl(171, 69%, 40%), 0 4px 10px hsl(210, 10%, 33%);
+        @include media-query (mobile){
+            width: 90%;
+            margin-top: 20px;
+            margin-left: 0;
+        }
     }
 }

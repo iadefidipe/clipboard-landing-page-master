@@ -8,6 +8,9 @@ article{
             p{
                 margin: 1.875rem auto 0 auto; 
                 width: 60ch;
+                @include media-query(mobile){
+                    width: 80%;
+                }
             }
 
             
@@ -17,22 +20,47 @@ article{
             margin-top: 5rem;
             display: flex;
             align-items: center;
+            @include media-query(tablet){
+                flex-direction: column;
+                justify-content: center;
+
+               
+            }
 
             img{
                 transform: translateX(-100px);
+                @include media-query(tablet){
+                    transform: translateX(0);
+                    width: 500px;
+                    height: 500px;
+                }
+                @include media-query(mobile){
+                    width: 300px;
+                    height: 300px;
+                }
             }
 
+
+        }
+
             aside{
-                text-align: left;
+                // text-align: left;
                 margin: -20px 0 0 6.875rem;
+                @include media-query(tablet){
+                    margin: 20px 0 0 0;
+                    text-align: center;
+                }
+
 
                 .feature{
-                    
                     
 
                     p{
                         margin-top: 1.125rem;
                         width: 35ch;
+                        @include media-query(tablet){
+                            width: 90%;
+                        }
                     }
 
                     &:not(:first-child){
@@ -44,13 +72,27 @@ article{
 
             }
 
-        }
-
-        &:nth-child(2){
+            &:nth-child(2){
             margin-top:10rem;
-            > img{
-                margin-top: 100px;
+                // @include media-query(tablet){
+                //     margin-top: 20px;
+
+                //     text-align: center;
+                // }
+
+                > img{
+                    margin-top: 6.25rem;
+                    @include media-query(tablet){
+                        width: 25rem;
+                        height: 18.75rem;
+
+                    }
+
+
+                }
             }
-        }
+
     }
+
+        
 }

@@ -3,6 +3,26 @@ header .hero__button, .cta__button {
   font-weight: 600;
 }
 
+@media screen and (max-width: 556px) {
+  header .hero__button, .cta__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
 header .hero__button a:first-child, .cta__button a:first-child {
   display: inline-block;
   width: 12rem;
@@ -12,6 +32,12 @@ header .hero__button a:first-child, .cta__button a:first-child {
   background: #6173ff;
   -webkit-box-shadow: 1px 2px #5669f5, 0 4px 10px #6173ff;
           box-shadow: 1px 2px #5669f5, 0 4px 10px #6173ff;
+}
+
+@media screen and (max-width: 556px) {
+  header .hero__button a:first-child, .cta__button a:first-child {
+    width: 90%;
+  }
 }
 
 header .hero__button a:last-child, .cta__button a:last-child {
@@ -24,6 +50,14 @@ header .hero__button a:last-child, .cta__button a:last-child {
   background: #26baa4;
   -webkit-box-shadow: 1px 2px #20ac97, 0 4px 10px #4c545d;
           box-shadow: 1px 2px #20ac97, 0 4px 10px #4c545d;
+}
+
+@media screen and (max-width: 556px) {
+  header .hero__button a:last-child, .cta__button a:last-child {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 0;
+  }
 }
 
 html {
@@ -43,6 +77,14 @@ body {
   background-position: top;
   text-align: center;
   font-family: "Bai Jamjuree", sans-serif;
+}
+
+@media screen and (max-width: 556px) {
+  body {
+    background-image: url(/images/bg-header-mobile.png);
+    background-size: contain;
+    margin: 0 15px;
+  }
 }
 
 a, a::after, a::before {
@@ -85,6 +127,12 @@ header .hero p {
   font-size: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  header .hero p {
+    width: 80%;
+  }
+}
+
 .extra {
   margin: 5rem auto 5rem auto;
   display: -webkit-box;
@@ -92,6 +140,18 @@ header .hero p {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .extra {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .extra .copy img {
@@ -112,6 +172,24 @@ header .hero p {
       justify-content: space-around;
 }
 
+@media screen and (max-width: 768px) {
+  .sponsors {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sponsors img:not(:first-child) {
+    margin-top: 3.125rem;
+  }
+}
+
 .cta {
   margin-bottom: 8.125rem;
 }
@@ -121,6 +199,12 @@ header .hero p {
   width: 60ch;
 }
 
+@media screen and (max-width: 768px) {
+  .cta__copy p {
+    width: 80%;
+  }
+}
+
 article {
   margin-top: 6rem;
 }
@@ -128,6 +212,12 @@ article {
 article .features__copy p {
   margin: 1.875rem auto 0 auto;
   width: 60ch;
+}
+
+@media screen and (max-width: 556px) {
+  article .features__copy p {
+    width: 80%;
+  }
 }
 
 article .features > section {
@@ -140,22 +230,62 @@ article .features > section {
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  article .features > section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 article .features > section img {
   -webkit-transform: translateX(-100px);
           transform: translateX(-100px);
 }
 
-article .features > section aside {
-  text-align: left;
+@media screen and (max-width: 768px) {
+  article .features > section img {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 556px) {
+  article .features > section img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+article .features aside {
   margin: -20px 0 0 6.875rem;
 }
 
-article .features > section aside .feature p {
+@media screen and (max-width: 768px) {
+  article .features aside {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+}
+
+article .features aside .feature p {
   margin-top: 1.125rem;
   width: 35ch;
 }
 
-article .features > section aside .feature:not(:first-child) {
+@media screen and (max-width: 768px) {
+  article .features aside .feature p {
+    width: 90%;
+  }
+}
+
+article .features aside .feature:not(:first-child) {
   margin-top: 4.0625rem;
 }
 
@@ -164,7 +294,14 @@ article .features:nth-child(2) {
 }
 
 article .features:nth-child(2) > img {
-  margin-top: 100px;
+  margin-top: 6.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  article .features:nth-child(2) > img {
+    width: 25rem;
+    height: 18.75rem;
+  }
 }
 
 footer {
@@ -180,9 +317,24 @@ footer {
   padding: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 footer img {
   width: 3.4375rem;
   height: 3.4375rem;
+}
+
+@media screen and (max-width: 768px) {
+  footer img {
+    margin-bottom: 2.1875rem;
+  }
 }
 
 footer .link {
@@ -194,8 +346,25 @@ footer .link {
       grid-template-rows: repeat(2, minmax(10px, 30px));
 }
 
+@media screen and (max-width: 768px) {
+  footer .link {
+    margin-top: 2.1875rem 0;
+    -ms-grid-columns: minmax(20ch, auto);
+        grid-template-columns: minmax(20ch, auto);
+    -ms-grid-rows: (minmax(10px, 30px))[5];
+        grid-template-rows: repeat(5, minmax(10px, 30px));
+    grid-gap: 2.1875rem;
+  }
+}
+
 footer .link > a {
   color: #4c545d;
+}
+
+@media screen and (max-width: 768px) {
+  footer .socials {
+    margin-top: 2.1875rem;
+  }
 }
 
 footer .socials img {

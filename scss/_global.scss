@@ -13,6 +13,11 @@ body{
   background-position: top;
   text-align: center;
   font-family: $font-bai;
+  @include media-query(mobile){
+    background-image: url(/images/bg-header-mobile.png);
+    background-size: contain;
+    margin: 0 15px;
+  }
 }
 
 a, a::after, a::before{
