@@ -72,7 +72,7 @@ html {
 }
 
 body {
-  background-image: url(/images/bg-header-desktop.png);
+  background-image: url(../images/bg-header-desktop.png);
   background-repeat: no-repeat;
   background-position: top;
   text-align: center;
@@ -81,7 +81,7 @@ body {
 
 @media screen and (max-width: 34.75rem) {
   body {
-    background-image: url(/images/bg-header-mobile.png);
+    background-image: url(../images/bg-header-mobile.png);
     background-size: contain;
     margin: 0 0.9375rem;
   }

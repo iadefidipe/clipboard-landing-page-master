@@ -8,13 +8,13 @@ html{
 }
 
 body{
-  background-image: url(/images/bg-header-desktop.png);
+  background-image: url(../images/bg-header-desktop.png);
   background-repeat: no-repeat;
   background-position: top;
   text-align: center;
   font-family: $font-bai;
   @include media-query(mobile){
-    background-image: url(/images/bg-header-mobile.png);
+    background-image: url(../images/bg-header-mobile.png);
     background-size: contain;
     margin: 0 0.9375rem;
   }
